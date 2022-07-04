@@ -7,11 +7,48 @@
 
 import UIKit
 
-class SCTabBarController: UITabBarController {
+final class SCTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().tintColor = .systemBlue
+        viewControllers = [
+            createProductsNavigationController(),
+            createCartNavigationController(),
+            createProfileNavigationController()
+        ]
+    }
 
-        
+    private func createProductsNavigationController() -> UINavigationController {
+        let productsViewController = ProductsViewController()
+        productsViewController.tabBarItem = UITabBarItem(
+            title: "Товары",
+            image: SFSymbols.gift,
+            tag: 0
+        )
+
+        return UINavigationController(rootViewController: productsViewController)
+    }
+
+    private func createCartNavigationController() -> UINavigationController {
+        let cartListViewController = CartViewController()
+        cartListViewController.tabBarItem = UITabBarItem(
+            title: "Корзина",
+            image: SFSymbols.cart,
+            tag: 0
+        )
+
+        return UINavigationController(rootViewController: cartListViewController)
+    }
+    
+    private func createProfileNavigationController() -> UINavigationController {
+        let profileViewController = ProfileViewController()
+        profileViewController.tabBarItem = UITabBarItem(
+            title: "Профиль",
+            image: SFSymbols.profile,
+            tag: 0
+        )
+
+        return UINavigationController(rootViewController: profileViewController)
     }
 }
