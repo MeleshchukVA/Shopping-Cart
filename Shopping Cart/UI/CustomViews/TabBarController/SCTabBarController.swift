@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SCTabBarController.swift
 //  Shopping Cart
 //
 //  Created by Владимир Мелещук on 04.07.2022.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SCTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
-
-
 }
-

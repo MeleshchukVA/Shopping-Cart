@@ -9,20 +9,26 @@
 /* Begin PBXBuildFile section */
 		3F238F9E2872B73700AB2B4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238F9D2872B73700AB2B4A /* AppDelegate.swift */; };
 		3F238FA02872B73700AB2B4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238F9F2872B73700AB2B4A /* SceneDelegate.swift */; };
-		3F238FA22872B73700AB2B4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FA12872B73700AB2B4A /* ViewController.swift */; };
 		3F238FA72872B73900AB2B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F238FA62872B73900AB2B4A /* Assets.xcassets */; };
 		3F238FAA2872B73900AB2B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F238FA82872B73900AB2B4A /* LaunchScreen.storyboard */; };
+		3F238FB52873102900AB2B4A /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FB42873102900AB2B4A /* ProductsViewController.swift */; };
+		3F238FB72873103800AB2B4A /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FB62873103800AB2B4A /* CartViewController.swift */; };
+		3F238FB92873104F00AB2B4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FB82873104F00AB2B4A /* ProfileViewController.swift */; };
+		3F238FBD287310F400AB2B4A /* SCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FBC287310F400AB2B4A /* SCTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F238F9A2872B73700AB2B4A /* Shopping Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping Cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F238F9D2872B73700AB2B4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F238F9F2872B73700AB2B4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F238FA12872B73700AB2B4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F238FA62872B73900AB2B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F238FA92872B73900AB2B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F238FAB2872B73900AB2B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F238FB128730BCD00AB2B4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F238FB42873102900AB2B4A /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		3F238FB62873103800AB2B4A /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		3F238FB82873104F00AB2B4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3F238FBC287310F400AB2B4A /* SCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,14 +62,57 @@
 		3F238F9C2872B73700AB2B4A /* Shopping Cart */ = {
 			isa = PBXGroup;
 			children = (
+				3F238FBE2873112100AB2B4A /* App */,
+				3F238FB228730FF600AB2B4A /* UI */,
+			);
+			path = "Shopping Cart";
+			sourceTree = "<group>";
+		};
+		3F238FB228730FF600AB2B4A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FBA2873109D00AB2B4A /* CustomViews */,
+				3F238FB32873100300AB2B4A /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3F238FB32873100300AB2B4A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FB42873102900AB2B4A /* ProductsViewController.swift */,
+				3F238FB62873103800AB2B4A /* CartViewController.swift */,
+				3F238FB82873104F00AB2B4A /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F238FBA2873109D00AB2B4A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FBB287310B500AB2B4A /* TabBarController */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3F238FBB287310B500AB2B4A /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FBC287310F400AB2B4A /* SCTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		3F238FBE2873112100AB2B4A /* App */ = {
+			isa = PBXGroup;
+			children = (
 				3F238F9D2872B73700AB2B4A /* AppDelegate.swift */,
 				3F238F9F2872B73700AB2B4A /* SceneDelegate.swift */,
-				3F238FA12872B73700AB2B4A /* ViewController.swift */,
 				3F238FA62872B73900AB2B4A /* Assets.xcassets */,
 				3F238FA82872B73900AB2B4A /* LaunchScreen.storyboard */,
 				3F238FAB2872B73900AB2B4A /* Info.plist */,
 			);
-			path = "Shopping Cart";
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F238FA22872B73700AB2B4A /* ViewController.swift in Sources */,
+				3F238FBD287310F400AB2B4A /* SCTabBarController.swift in Sources */,
+				3F238FB92873104F00AB2B4A /* ProfileViewController.swift in Sources */,
 				3F238F9E2872B73700AB2B4A /* AppDelegate.swift in Sources */,
+				3F238FB72873103800AB2B4A /* CartViewController.swift in Sources */,
+				3F238FB52873102900AB2B4A /* ProductsViewController.swift in Sources */,
 				3F238FA02872B73700AB2B4A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F3GPX8Z3U8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Shopping Cart/Info.plist";
+				INFOPLIST_FILE = "Shopping Cart/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -306,7 +358,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F3GPX8Z3U8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Shopping Cart/Info.plist";
+				INFOPLIST_FILE = "Shopping Cart/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
