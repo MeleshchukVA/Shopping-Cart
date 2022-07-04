@@ -64,9 +64,9 @@
 		3F238F9C2872B73700AB2B4A /* Shopping Cart */ = {
 			isa = PBXGroup;
 			children = (
-				3F238FBF287339F500AB2B4A /* Utilities */,
 				3F238FBE2873112100AB2B4A /* App */,
 				3F238FB228730FF600AB2B4A /* UI */,
+				3F238FBF287339F500AB2B4A /* Utilities */,
 			);
 			path = "Shopping Cart";
 			sourceTree = "<group>";
