@@ -12,3 +12,7 @@ enum SFSymbols {
     static let cart = UIImage(systemName: "cart")
     static let profile = UIImage(systemName: "person.crop.circle")
 }
+
+enum Images {
+    static let placeholder = UIImage(named: "placeholder")
+}

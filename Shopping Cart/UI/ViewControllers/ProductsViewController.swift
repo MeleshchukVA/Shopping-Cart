@@ -38,6 +38,7 @@ final class ProductsViewController: UIViewController {
     }
     
     //MARK: - Actions
+    
     @objc func cartButtonTapped() {
         
     }
