@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SCSecondaryTitleLabel: UILabel {
+final class SCSecondaryTitleLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,9 +25,10 @@ class SCSecondaryTitleLabel: UILabel {
 
     private func configure() {
         textColor = .secondaryLabel
+        numberOfLines = 0
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.9
-        lineBreakMode = .byTruncatingTail
+        lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

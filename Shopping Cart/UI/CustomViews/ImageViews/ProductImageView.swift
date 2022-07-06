@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductImageView: UIImageView {
+final class ProductImageView: UIImageView {
     
     let placeholderImage = Images.placeholder
     

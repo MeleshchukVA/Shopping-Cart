@@ -19,6 +19,8 @@
 		3F238FC428734C8C00AB2B4A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC328734C8C00AB2B4A /* ProductCollectionViewCell.swift */; };
 		3F238FC728734D3800AB2B4A /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC628734D3800AB2B4A /* ProductImageView.swift */; };
 		3F238FCA287406C200AB2B4A /* SCSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC9287406C200AB2B4A /* SCSecondaryTitleLabel.swift */; };
+		3F238FCD28740A0800AB2B4A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FCC28740A0800AB2B4A /* UIView+Extension.swift */; };
+		3F238FD228748DAD00AB2B4A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FD128748DAD00AB2B4A /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		3F238FC328734C8C00AB2B4A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F238FC628734D3800AB2B4A /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
 		3F238FC9287406C200AB2B4A /* SCSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		3F238FCC28740A0800AB2B4A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3F238FD128748DAD00AB2B4A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				3F238FBE2873112100AB2B4A /* App */,
+				3F238FCE28744B5000AB2B4A /* Model */,
 				3F238FB228730FF600AB2B4A /* UI */,
 				3F238FBF287339F500AB2B4A /* Utilities */,
 			);
@@ -130,6 +135,7 @@
 		3F238FBF287339F500AB2B4A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3F238FCB287409BB00AB2B4A /* Extensions */,
 				3F238FC028733A0D00AB2B4A /* Constants.swift */,
 			);
 			path = Utilities;
@@ -157,6 +163,22 @@
 				3F238FC9287406C200AB2B4A /* SCSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		3F238FCB287409BB00AB2B4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FCC28740A0800AB2B4A /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F238FCE28744B5000AB2B4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FD128748DAD00AB2B4A /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,10 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F238FCD28740A0800AB2B4A /* UIView+Extension.swift in Sources */,
 				3F238FBD287310F400AB2B4A /* SCTabBarController.swift in Sources */,
 				3F238FB92873104F00AB2B4A /* ProfileViewController.swift in Sources */,
 				3F238FC428734C8C00AB2B4A /* ProductCollectionViewCell.swift in Sources */,
 				3F238F9E2872B73700AB2B4A /* AppDelegate.swift in Sources */,
+				3F238FD228748DAD00AB2B4A /* Product.swift in Sources */,
 				3F238FCA287406C200AB2B4A /* SCSecondaryTitleLabel.swift in Sources */,
 				3F238FB72873103800AB2B4A /* CartViewController.swift in Sources */,
 				3F238FC128733A0D00AB2B4A /* Constants.swift in Sources */,
