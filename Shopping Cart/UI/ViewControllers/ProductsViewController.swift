@@ -35,63 +35,52 @@ final class ProductsViewController: UIViewController {
         super.viewDidLoad()
 
         configureView()
-        configureCartBarButtonItem()
         configureCollectionView()
         configureDataSource()
     }
     
     // MARK: - Private methods
     
-    // MARK: View, BarButtonItem
+    // MARK: View, CollectionView, FlowLayout
     private func configureView() {
-        view.backgroundColor = .systemBackground
         title = "Товары"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    private func configureCartBarButtonItem() {
-        let configuration = UIImage.SymbolConfiguration(pointSize: 20)
-        let cartButton = UIBarButtonItem(
-            image: SFSymbols.cart?.withConfiguration(configuration),
-            style: .plain,
-            target: self,
-            action: #selector(cartButtonTapped)
-        )
-        navigationItem.rightBarButtonItem = cartButton
-    }
-    
-    // MARK: CollectionView, Layout
     private func configureCollectionView() {
         collectionView = UICollectionView(
             frame: view.bounds,
-            collectionViewLayout: createThreeColumnFlowLayout(in: view)
+            collectionViewLayout: createTwoColumnFlowLayout(in: view)
         )
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = .systemGray6
         collectionView.register(
             ProductCollectionViewCell.self,
             forCellWithReuseIdentifier: ProductCollectionViewCell.reuseID
         )
     }
     
-    private func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
-        let width = view.bounds.width
-        let padding: CGFloat = 6
-        let minimumItemSpacing: CGFloat = 5
-        let availableWidth = width - (padding * 2) - (minimumItemSpacing * 2)
-        let itemWidth = availableWidth / 2 // Количество столбцов.
+    private func createTwoColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
+        let width = view.bounds.width // Ширина всего экрана.
+        let padding: CGFloat = 12 // Расстояние вокруг ячеек (UIEdgeInsets).
+        let minimumItemSpacing: CGFloat = 12 // Минимальное расстояние между ячейками.
+        // padding * 2, где 2 - расстояние слева и справа экрана.
+        /* minimumItemSpacing * 1, где 1 - количество расстояний между стобцами
+        /  2 столбца - 1 такое расстояние, 3 столбца - 2, 4 столбца - 3 и т.д. */
+        let availableWidth = width - (padding * 2) - (minimumItemSpacing * 1)
+        // Ширина одной ячейки равна доступной ширине, поделенной на количество стобцов.
+        let itemWidth = availableWidth / 2
 
         let flowLayout = UICollectionViewFlowLayout()
-        
         flowLayout.sectionInset = UIEdgeInsets(
-            top: padding, // Расстояние над первыми двумя ячейками.
+            top: padding, // Расстояние над верхними ячейками.
             left: padding, // Расстояние слева от всех ячеек.
-            bottom: padding, // Расстояние под последними ячейками.
-            right: padding) // Расстояние справа от всех ячеек.
-        
+            bottom: padding, // Расстояние под нижними ячейками.
+            right: padding // Расстояние справа от всех ячеек.
+        )
         flowLayout.itemSize = CGSize(
-            width: itemWidth, // Расстояние между ячейками по оси X.
-            height: itemWidth + 90 //Расстояние между ячейками по оси Y.
+            width: itemWidth, // Ширина ячейки.
+            height: itemWidth + 200 // Высота ячейки.
         )
 
         return flowLayout
@@ -118,11 +107,5 @@ final class ProductsViewController: UIViewController {
         snapshot.appendSections([.main])
         snapshot.appendItems(products)
         self.dataSource.apply(snapshot, animatingDifferences: true)
-    }
-    
-    // MARK: - Actions
-    
-    @objc func cartButtonTapped() {
-        
     }
 }

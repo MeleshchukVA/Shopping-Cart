@@ -23,11 +23,13 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     
     func setupCell(product: Product) {
         productImageView.image = Images.placeholder
-        productLabel.text = product.productName
+        
+        backgroundColor = .systemBackground
+        layer.cornerRadius = 10
     }
 
     private func configure() {
-        addSubviews(productImageView, productLabel)
+        addSubviews(productImageView)
 
         let padding: CGFloat = 6
 
@@ -35,12 +37,7 @@ final class ProductCollectionViewCell: UICollectionViewCell {
             productImageView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
             productImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             productImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            productImageView.heightAnchor.constraint(equalToConstant: 250),
-
-            productLabel.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: padding),
-            productLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
-            productLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            productLabel.heightAnchor.constraint(equalToConstant: 20)
+            productImageView.heightAnchor.constraint(equalToConstant: 140),
         ])
     }
 }
