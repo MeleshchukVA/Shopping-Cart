@@ -41,12 +41,13 @@ final class ProductsViewController: UIViewController {
     
     // MARK: - Private methods
     
-    // MARK: View, CollectionView, FlowLayout
+    // MARK: View
     private func configureView() {
-        title = "Товары"
+        title = Strings.products
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    // MARK: CollectionView
     private func configureCollectionView() {
         collectionView = UICollectionView(
             frame: view.bounds,
@@ -60,6 +61,7 @@ final class ProductsViewController: UIViewController {
         )
     }
     
+    // MARK: FlowLayout
     private func createTwoColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
         let width = view.bounds.width // Ширина всего экрана.
         let padding: CGFloat = 12 // Расстояние вокруг ячеек (UIEdgeInsets).
@@ -86,7 +88,7 @@ final class ProductsViewController: UIViewController {
         return flowLayout
     }
     
-    // MARK: DataSource, Snapshot
+    // MARK: DataSource
     private func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, Product>(
             collectionView: collectionView,
@@ -95,6 +97,7 @@ final class ProductsViewController: UIViewController {
                 withReuseIdentifier: ProductCollectionViewCell.reuseID,
                 for: indexPath
             ) as! ProductCollectionViewCell
+            
             cell.setupCell(product: product)
             return cell
         })
@@ -102,6 +105,7 @@ final class ProductsViewController: UIViewController {
         configureSnapshot()
     }
     
+    // MARK: Snapshot
     private func configureSnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Product>()
         snapshot.appendSections([.main])

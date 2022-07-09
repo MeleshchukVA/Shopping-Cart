@@ -8,7 +8,9 @@
 import UIKit
 
 final class ProductCollectionViewCell: UICollectionViewCell {
+    
     static let reuseID = "ProductCell"
+    
     let productImageView = ProductImageView(frame: .zero)
     let productLabel = SCSecondaryTitleLabel(fontSize: 20)
 

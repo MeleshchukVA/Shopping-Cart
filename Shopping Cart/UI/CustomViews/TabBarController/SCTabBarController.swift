@@ -22,7 +22,7 @@ final class SCTabBarController: UITabBarController {
     private func createProductsNavigationController() -> UINavigationController {
         let productsViewController = ProductsViewController()
         productsViewController.tabBarItem = UITabBarItem(
-            title: "Товары",
+            title: Strings.products,
             image: SFSymbols.gift,
             tag: 0
         )
@@ -33,7 +33,7 @@ final class SCTabBarController: UITabBarController {
     private func createCartNavigationController() -> UINavigationController {
         let cartListViewController = CartViewController()
         cartListViewController.tabBarItem = UITabBarItem(
-            title: "Корзина",
+            title: Strings.cart,
             image: SFSymbols.cart,
             tag: 0
         )
@@ -44,7 +44,7 @@ final class SCTabBarController: UITabBarController {
     private func createProfileNavigationController() -> UINavigationController {
         let profileViewController = ProfileViewController()
         profileViewController.tabBarItem = UITabBarItem(
-            title: "Профиль",
+            title: Strings.profile,
             image: SFSymbols.profile,
             tag: 0
         )

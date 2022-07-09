@@ -17,7 +17,7 @@ final class ProfileViewController: UIViewController {
     
     private func configureView() {
         view.backgroundColor = .systemYellow
-        title = "Профиль"
+        title = Strings.profile
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 }

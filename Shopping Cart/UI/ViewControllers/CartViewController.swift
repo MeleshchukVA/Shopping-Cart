@@ -17,7 +17,7 @@ final class CartViewController: UIViewController {
     
     private func configureView() {
         view.backgroundColor = .systemGreen
-        title = "Корзина"
+        title = Strings.cart
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
