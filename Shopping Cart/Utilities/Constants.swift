@@ -21,4 +21,6 @@ enum Strings {
     static let products = "Товары"
     static let cart = "Корзина"
     static let profile = "Профиль"
+    
+    static let plus = "plus"
 }

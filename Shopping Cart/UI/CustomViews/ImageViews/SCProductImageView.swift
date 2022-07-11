@@ -1,14 +1,14 @@
 //
-//  ProductImageView.swift
+//  SCProductImageView.swift
 //  Shopping Cart
 //
-//  Created by Владимир Мелещук on 04.07.2022.
+//  Created by Владимир Мелещук on 09.07.2022.
 //
 
 import UIKit
 
-final class ProductImageView: UIImageView {
-    
+final class SCProductImageView: UIImageView {
+
     let placeholderImage = Images.placeholder
     
     override init(frame: CGRect) {

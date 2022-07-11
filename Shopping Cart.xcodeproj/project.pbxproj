@@ -17,10 +17,13 @@
 		3F238FBD287310F400AB2B4A /* SCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FBC287310F400AB2B4A /* SCTabBarController.swift */; };
 		3F238FC128733A0D00AB2B4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC028733A0D00AB2B4A /* Constants.swift */; };
 		3F238FC428734C8C00AB2B4A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC328734C8C00AB2B4A /* ProductCollectionViewCell.swift */; };
-		3F238FC728734D3800AB2B4A /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC628734D3800AB2B4A /* ProductImageView.swift */; };
 		3F238FCA287406C200AB2B4A /* SCSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FC9287406C200AB2B4A /* SCSecondaryTitleLabel.swift */; };
 		3F238FCD28740A0800AB2B4A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FCC28740A0800AB2B4A /* UIView+Extension.swift */; };
 		3F238FD228748DAD00AB2B4A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FD128748DAD00AB2B4A /* Product.swift */; };
+		3F238FD72879A45200AB2B4A /* SCProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FD62879A45200AB2B4A /* SCProductImageView.swift */; };
+		3F238FD92879A49900AB2B4A /* SCCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FD82879A49900AB2B4A /* SCCellView.swift */; };
+		3F238FDC2879AFEF00AB2B4A /* SCTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FDB2879AFEF00AB2B4A /* SCTitleLabel.swift */; };
+		3F238FDF2879B1B200AB2B4A /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F238FDE2879B1B200AB2B4A /* SCButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +40,13 @@
 		3F238FBC287310F400AB2B4A /* SCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarController.swift; sourceTree = "<group>"; };
 		3F238FC028733A0D00AB2B4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F238FC328734C8C00AB2B4A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
-		3F238FC628734D3800AB2B4A /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
 		3F238FC9287406C200AB2B4A /* SCSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		3F238FCC28740A0800AB2B4A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3F238FD128748DAD00AB2B4A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3F238FD62879A45200AB2B4A /* SCProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProductImageView.swift; sourceTree = "<group>"; };
+		3F238FD82879A49900AB2B4A /* SCCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCellView.swift; sourceTree = "<group>"; };
+		3F238FDB2879AFEF00AB2B4A /* SCTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTitleLabel.swift; sourceTree = "<group>"; };
+		3F238FDE2879B1B200AB2B4A /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +110,12 @@
 		3F238FBA2873109D00AB2B4A /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				3F238FC828734D6F00AB2B4A /* Labels */,
+				3F238FDD2879B09E00AB2B4A /* Buttons */,
 				3F238FC228734C2200AB2B4A /* Cells */,
 				3F238FC528734CE200AB2B4A /* ImageViews */,
+				3F238FC828734D6F00AB2B4A /* Labels */,
 				3F238FBB287310B500AB2B4A /* TabBarController */,
+				3F238FDA2879A4A300AB2B4A /* Views */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -152,7 +160,7 @@
 		3F238FC528734CE200AB2B4A /* ImageViews */ = {
 			isa = PBXGroup;
 			children = (
-				3F238FC628734D3800AB2B4A /* ProductImageView.swift */,
+				3F238FD62879A45200AB2B4A /* SCProductImageView.swift */,
 			);
 			path = ImageViews;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				3F238FC9287406C200AB2B4A /* SCSecondaryTitleLabel.swift */,
+				3F238FDB2879AFEF00AB2B4A /* SCTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -179,6 +188,22 @@
 				3F238FD128748DAD00AB2B4A /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3F238FDA2879A4A300AB2B4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FD82879A49900AB2B4A /* SCCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F238FDD2879B09E00AB2B4A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3F238FDE2879B1B200AB2B4A /* SCButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,18 +276,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F238FD72879A45200AB2B4A /* SCProductImageView.swift in Sources */,
 				3F238FCD28740A0800AB2B4A /* UIView+Extension.swift in Sources */,
+				3F238FD92879A49900AB2B4A /* SCCellView.swift in Sources */,
+				3F238FDC2879AFEF00AB2B4A /* SCTitleLabel.swift in Sources */,
 				3F238FBD287310F400AB2B4A /* SCTabBarController.swift in Sources */,
 				3F238FB92873104F00AB2B4A /* ProfileViewController.swift in Sources */,
 				3F238FC428734C8C00AB2B4A /* ProductCollectionViewCell.swift in Sources */,
 				3F238F9E2872B73700AB2B4A /* AppDelegate.swift in Sources */,
+				3F238FDF2879B1B200AB2B4A /* SCButton.swift in Sources */,
 				3F238FD228748DAD00AB2B4A /* Product.swift in Sources */,
 				3F238FCA287406C200AB2B4A /* SCSecondaryTitleLabel.swift in Sources */,
 				3F238FB72873103800AB2B4A /* CartViewController.swift in Sources */,
 				3F238FC128733A0D00AB2B4A /* Constants.swift in Sources */,
 				3F238FB52873102900AB2B4A /* ProductsViewController.swift in Sources */,
 				3F238FA02872B73700AB2B4A /* SceneDelegate.swift in Sources */,
-				3F238FC728734D3800AB2B4A /* ProductImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,5 @@ import Foundation
 struct Product: Hashable {
     let productImage: String
     let productName: String
+    let price: String
 }

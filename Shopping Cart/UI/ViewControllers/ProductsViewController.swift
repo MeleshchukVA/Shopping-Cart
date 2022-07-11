@@ -8,16 +8,16 @@
 import UIKit
 
 let products = [
-    Product(productImage: "placeholder", productName: "Product name 1"),
-    Product(productImage: "placeholder", productName: "Product name 2"),
-    Product(productImage: "placeholder", productName: "Product name 3"),
-    Product(productImage: "placeholder", productName: "Product name 4"),
-    Product(productImage: "placeholder", productName: "Product name 5"),
-    Product(productImage: "placeholder", productName: "Product name 6"),
-    Product(productImage: "placeholder", productName: "Product name 7"),
-    Product(productImage: "placeholder", productName: "Product name 8"),
-    Product(productImage: "placeholder", productName: "Product name 9"),
-    Product(productImage: "placeholder", productName: "Product name 10"),
+    Product(productImage: "placeholder", productName: "Product name1Product name 11Product name 1", price: "100 ₽"),
+    Product(productImage: "placeholder", productName: "Product name2Product name 12Product name 1", price: "200 ₽"),
+    Product(productImage: "placeholder", productName: "Product name3Product name 13Product name 1", price: "300 ₽"),
+    Product(productImage: "placeholder", productName: "Product name4Product name 14Product name 1", price: "400 ₽"),
+    Product(productImage: "placeholder", productName: "Product name5Product name 15Product name 1", price: "500 ₽"),
+    Product(productImage: "placeholder", productName: "Product name6Product name 16Product name 1", price: "600 ₽"),
+    Product(productImage: "placeholder", productName: "Product name7Product name 17Product name 1", price: "700 ₽"),
+    Product(productImage: "placeholder", productName: "Product name8Product name 18Product name 1", price: "800 ₽"),
+    Product(productImage: "placeholder", productName: "Product name9Product name 19Product name 1", price: "900 ₽"),
+    Product(productImage: "placeholder", productName: "Product name10Product name 10Product name 1", price: "1000 ₽"),
 ]
 
 final class ProductsViewController: UIViewController {

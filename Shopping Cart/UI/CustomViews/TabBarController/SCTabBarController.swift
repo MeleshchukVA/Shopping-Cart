@@ -8,7 +8,7 @@
 import UIKit
 
 final class SCTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UITabBar.appearance().tintColor = .systemBlue
@@ -18,7 +18,7 @@ final class SCTabBarController: UITabBarController {
             createProfileNavigationController()
         ]
     }
-
+    
     private func createProductsNavigationController() -> UINavigationController {
         let productsViewController = ProductsViewController()
         productsViewController.tabBarItem = UITabBarItem(
@@ -26,10 +26,10 @@ final class SCTabBarController: UITabBarController {
             image: SFSymbols.gift,
             tag: 0
         )
-
+        
         return UINavigationController(rootViewController: productsViewController)
     }
-
+    
     private func createCartNavigationController() -> UINavigationController {
         let cartListViewController = CartViewController()
         cartListViewController.tabBarItem = UITabBarItem(
@@ -37,7 +37,7 @@ final class SCTabBarController: UITabBarController {
             image: SFSymbols.cart,
             tag: 0
         )
-
+        
         return UINavigationController(rootViewController: cartListViewController)
     }
     
@@ -48,7 +48,7 @@ final class SCTabBarController: UITabBarController {
             image: SFSymbols.profile,
             tag: 0
         )
-
+        
         return UINavigationController(rootViewController: profileViewController)
     }
 }
